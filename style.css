@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: gotham;
+  padding: 5vw;
+  font-size: 2vw;
+  background-color: #1DB954;
+  text-align: center;
+}
+
+@font-face {
+  font-family: gotham;
+  src: url(Gotham-Bold.otf);
+}
+
+
+
+#nav {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 5vw;
+  border-bottom: 3px solid black;
+  margin-bottom: 5vw;
+}
+
+#nav>a, #nav>a:visited {
+  color: #1ec300;
+  background-color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#nav>a:hover {
+  background-color: black;
+  color: #1ec300;
+}
+
+h1#pageTitle {
+text-align: center;
+}
+
+#outputGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5vw;
+}
+
+#outputGrid>a, #outputGrid>a:visited {
+  color: #32CD32;
+  background-color: black;
+  padding: 1.25vw;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.8s;
+  border-radius: 3px;
+}
+
+#outputGrid>a:hover {
+  background-color: white;
+  color: #32CD32
+}
+
+.previewTitle {
+  font-weight: bold;
+  margin-bottom: 1.25vw;
+}
+
+.itemTitle{
+  font-size: 5vw;
+  margin-bottom: 1.25vw;
+
+}
+
+.albumTitle{
+  text-align: center;
+  padding-top: 1em;
+}
+
+
+.thumbnail {
+  width: 100%;
+  border-radius: 3px;
+  display: flex;
+}
+
+
+
+.mainImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width:430px;
+  height:430px
+  margin-bottom: 2.5vw;
+  border-radius: 6px;
+}
+
+.description {
+  line-height: 2em;
+  text-align: center;
+}
